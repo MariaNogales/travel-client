@@ -36,7 +36,7 @@ const TravelDetailsPage = () => {
 
         userServices
             .addFavTravel(travelId, user.username)
-            .then(({ data }) => console.log('EL FAV YA TA', data))
+            .then(({ data }) => setTravel(data))
             .catch(err => console.error(err))
     }
 
