@@ -46,48 +46,48 @@ function SignupForm() {
   return (
     <div className="SignUpForm">
       <div>
-          <img src={Fly} alt="Plane" className="image" />
-        </div>
-        <div>
-      <Container>
-            <Form onSubmit={handleSignupSubmit}>
+        <img src={Fly} alt="Plane" className="image" />
+      </div>
+      <div>
+        <Container>
+          <Form onSubmit={handleSignupSubmit}>
             <Form.Group className="mb-3" controlId="email">
-                <Form.Label>Email Address</Form.Label>
-                <Form.Control
-                    type="email"
-                    placeholder="Enter email"
-                    name="email"
-                    onChange={handleInputChangeSubmit} />
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                onChange={handleInputChangeSubmit} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="password">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                    onChange={handleInputChangeSubmit} />
-                      <Form.Group className="mb-3" controlId="username">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={handleInputChangeSubmit} />
+              <Form.Group className="mb-3" controlId="username">
                 <Form.Label>Username</Form.Label>
                 <Form.Control
-                    type="username"
-                    placeholder="Enter Username"
-                    name="username"
-                    onChange={handleInputChangeSubmit} />
-            </Form.Group>
-                <Button type="submit">Login</Button>
+                  type="username"
+                  placeholder="Enter Username"
+                  name="username"
+                  onChange={handleInputChangeSubmit} />
+              </Form.Group>
+              <Button type="submit">Sign up</Button>
             </Form.Group>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
           </Form>
-                          <Row>
-                <Col>
-                    <p>
-                        Let's discover amazing destinations worldwide together!
-                    </p>
-                </Col>
-            </Row>
+          <Row>
+            <Col>
+              <p>
+                Let's discover amazing destinations worldwide together!
+              </p>
+            </Col>
+          </Row>
         </Container>
       </div>
-      </div>
+    </div>
   )
 }
 
